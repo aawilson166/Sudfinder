@@ -40,7 +40,7 @@ $(() => {
 
   $.ajax({
 
-    url: `https://api.openbrewerydb.org/breweries?by_city=temecula`
+    url: `https://api.openbrewerydb.org/breweries?by_city=murrieta`
 
 
   })//end of ajax
