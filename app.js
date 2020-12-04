@@ -11,20 +11,25 @@ make a for loop that cycles through the length of the array and displays results
 
 trying to make a variable that is equal to a string of the input box value and put it into my url using string interpolation
 
-try using jQuery to make a div on input click with the text
 
 variable worked once I put the AJAX inside of a on click function. without doing that the AJAX would load as soon as the page was refreshed
 
 
 could possibly make 5 buttons, state,city,zip,ect. with 5 hidden input boxes stacked on top of eachother and make on click event to display input box to corrisponding button
 
-layout HTML (form w/ buttons and optional radius)
+layout HTML (form w/ buttons and optional search radius)
 
 log specific data in console
 
 display data on webpage(use click event functions)
 
 basic CSS styling to make data legible
+
+MAKE A BEER CAROUSEL
+
+need to make it so you can only click submit once?
+
+
 
 
 ==============================================================

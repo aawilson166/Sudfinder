@@ -6,7 +6,7 @@ Thurs 12/3:
 -Use AJAX to Access Api data
 -Layout basic html wireframe
 -Insert data into the DOM and display it on page
-Basic CSS to make data legible on page
+-Basic CSS to make data legible on page
 
 
 Fri 12/4:

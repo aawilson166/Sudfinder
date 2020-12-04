@@ -1,0 +1,62 @@
+body {
+
+
+
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 18em;
+  height: 2em;
+  border-radius: 20%;
+}
+
+button {
+  background-color: green;
+  color: ghostwhite;
+  width: 10em;
+  height: 2em;
+  border-radius: 20%;
+}
+
+ul {
+  list-style-type: none;
+  border-bottom: 1em;
+  border-color: red;
+}
+
+li {
+  border-bottom: 1em;
+  border-color: red;
+}
+
+.nav {
+  position: sticky;
+  height: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #af6911;
+  display: flex;
+  justify-content: space-between;
+
+
+
+}
+
+.finder {
+  text-align: center;
+
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  line-height: 3em;
+  list-style-type: georgian;
+
+}
