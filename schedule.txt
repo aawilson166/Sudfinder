@@ -43,14 +43,14 @@ Wed 12/9:
 Present project!
 
 ====================================================================
-FIGGUR EM' OOT'S
+FIGURE IT OUT:
 ====================================================================
 
 -make a CAROUSEL
 
 how to make each list item have a solid line underneath making each line more legible
 
-how to search by either city, state, zip, blah blah
+how to search by either city, state, zip, ect...
 
 how to make a search radius *lat,long and math or is there an easier way?*
 
@@ -59,3 +59,5 @@ stationary nav bar that wont move when scrolling
 do I want to be able to stack results or just search one peram at a time?
 
 possible to display results on an interactive map? ya but how?
+
+can I push pictures of each brewery into the carousel?

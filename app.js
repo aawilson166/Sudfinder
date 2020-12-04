@@ -14,7 +14,6 @@ trying to make a variable that is equal to a string of the input box value and p
 
 variable worked once I put the AJAX inside of a on click function. without doing that the AJAX would load as soon as the page was refreshed
 
-
 could possibly make 5 buttons, state,city,zip,ect. with 5 hidden input boxes stacked on top of eachother and make on click event to display input box to corrisponding button
 
 layout HTML (form w/ buttons and optional search radius)
@@ -28,9 +27,6 @@ basic CSS styling to make data legible
 MAKE A BEER CAROUSEL
 
 need to make it so you can only click submit once?
-
-
-
 
 ==============================================================
 GRAVEYARD
@@ -54,10 +50,6 @@ for(let i = 0; i < data.length; i++) {
 
       //url: `https://api.openbrewerydb.org/breweries?by_city=murrieta`
 
-
-
-
-
 ==============================================================
 MEAT N' POTATOES
 ============================================================*/
@@ -65,11 +57,11 @@ MEAT N' POTATOES
 // console.log($);
 
 
-
-
-
 $(() => {
   //jQuery code goes here
+
+  //=========================================================
+  //CAROUSEL
 
   let currentImgIndex = 0;
   let numofImages = $(`.carousel-images`).children().length-1
@@ -100,7 +92,8 @@ $(() => {
 
 
 
-//=====================================================================
+//===================================================================
+//API
 
   $(`.button`).on(`click`,() => {
 
@@ -127,8 +120,6 @@ $(() => {
             let $street = $(`<li>`).text(`${data[i].street}`).appendTo(`.street`)
             let $state = $(`<li>`).text(`${data[i].state}`).appendTo(`.state`)
             let $postal = $(`<li>`).text(`${data[i].postal_code}`).appendTo(`.postal`)
-
-
 
           }//end for loop
 

@@ -4,7 +4,16 @@ body {
 }
 
 h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 auto;
+}
+
+.logo img {
+  padding: .5em;
+  width: 2em;
+  height: 2em;
 }
 
 .carousel-container {
@@ -19,7 +28,7 @@ h1 {
   width: 28em;
   height: 18em;
   display: none;
-  border: 1em solid gray;
+  border: .5em solid gray;
   border-radius: 20%;
 
 }
