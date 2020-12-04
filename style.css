@@ -1,9 +1,10 @@
 body {
-  /* position: absolute;
   background-image: url("https://static1.squarespace.com/static/53209a45e4b0c6583227b75d/57bc636ef5e23115c1933c33/5ec6b7a31f97445851a3a6a3/1593475383552/beer-suds.png?format=1500w");
+  background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-color: ghostwhite;
+  font-family: 'Noto Sans KR', sans-serif;
 
 }
 
@@ -27,9 +28,14 @@ h1 {
   align-items: center;
 }
 
+.carousel-images {
+
+
+}
+
 .carousel-images img {
-  margin: 1em 1em 1em 1em;
-  width: 35em;
+  margin: 0em 1em 1em 1em;
+  width: 45em;
   height: 20em;
   display: none;
   border: .5em solid black;
@@ -49,17 +55,17 @@ input {
 }
 
 button {
-  background-color: green;
+  background-color: #6e696c;
   color: ghostwhite;
   width: 10em;
-  height: 2em;
+  height: 2.5em;
   border-radius: 2em;
   border: .25em solid black;
 }
 
 button:hover {
-  background-color: blue;
-  border: .33em solid green;
+  background-color: #3a3739;
+  border: .33em solid #2e741d;
 
 
 }
@@ -81,12 +87,11 @@ li {
   position: fixed;
   left: 10%;
   top: 2%;
-  height: 1.5em;
-  font-size: 1.5em;
-  text-align: center;
-  background-color: gray;
+  height: 2.5em;
+  background-color: #6e696c;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border-radius: 2em;
   border: .2em solid black;
 
@@ -104,7 +109,8 @@ li {
 
 .container {
   margin-top: 1em;
-  background-color: gray;
+  background-color: #6e696c;
+  color: ghostwhite;
   display: flex;
   justify-content: space-around;
   line-height: 3em;

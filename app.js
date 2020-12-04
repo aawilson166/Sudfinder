@@ -61,6 +61,26 @@ $(() => {
   //jQuery code goes here
 
   //=========================================================
+  //Quiz
+
+  const quiz = () => {
+    prompt(`Welcome to the Beer Quiz! Type start to begin or quit to exit`, `start / quit`)
+      if(`start`) {
+        alert(`Good Choice, let's get started!`)
+        prompt(``)
+      }else{
+        null
+      }
+
+
+
+  }
+
+  $(`.quiz`).on(`click`, quiz)
+
+
+
+  //=========================================================
   //CAROUSEL
 
   let currentImgIndex = 0;
