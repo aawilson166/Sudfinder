@@ -1,6 +1,5 @@
 body {
-
-
+  background-color: ghostwhite;
 
 }
 
@@ -8,7 +7,30 @@ h1 {
   text-align: center;
 }
 
+.carousel-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-images img {
+  margin: 1em 1em 1em 1em;
+  width: 28em;
+  height: 18em;
+  display: none;
+  border: 1em solid gray;
+  border-radius: 20%;
+
+}
+
+
+.carousel-images img:first-of-type {
+  display: block;
+}
+
 input {
+  text-align: center;
   width: 18em;
   height: 2em;
   border-radius: 20%;
@@ -23,6 +45,7 @@ button {
 }
 
 ul {
+  margin: 0 auto 0 auto;
   list-style-type: none;
   border-bottom: 1em;
   border-color: red;
@@ -34,13 +57,15 @@ li {
 }
 
 .nav {
+  width: 80%;
   position: sticky;
   height: 1.5em;
   font-size: 1.5em;
   text-align: center;
-  background-color: #af6911;
+  background-color: gray;
   display: flex;
   justify-content: space-between;
+  border-radius: 20%;
 
 
 

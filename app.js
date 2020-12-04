@@ -71,6 +71,37 @@ MEAT N' POTATOES
 $(() => {
   //jQuery code goes here
 
+  let currentImgIndex = 0;
+  let numofImages = $(`.carousel-images`).children().length-1
+
+  $(`.next`).on(`click`, () => {
+    $(`.carousel-images`).children().eq(currentImgIndex).css("display", "none")
+    if(currentImgIndex < numofImages) {
+      currentImgIndex++
+    }else{
+      currentImgIndex = 0
+    }
+
+    $(`.carousel-images`).children().eq(currentImgIndex).css("display", "block")
+  })//end of next onclick
+
+
+  $(`.previous`).on(`click`, () => {
+    $(`.carousel-images`).children().eq(currentImgIndex).css("display", "none")
+    if(currentImgIndex > 0) {
+      currentImgIndex--
+    }else{
+      currentImgIndex = numofImages
+    }
+
+    $(`.carousel-images`).children().eq(currentImgIndex).css("display", "block")
+  })//end of previous onclick
+
+
+
+
+//=====================================================================
+
   $(`.button`).on(`click`,() => {
 
     let $userInput = $('input[type="text"]').val()
