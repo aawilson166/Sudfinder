@@ -1,11 +1,11 @@
 Thurs 12/3:
-Get project approved
-Set up Git repo
-Link files
-Pseudo code
-Use AJAX to Access Api data
-Layout basic html wireframe
-Insert data into the DOM and display it on page
+-Get project approved
+-Set up Git repo
+-Link files
+-Pseudo code
+-Use AJAX to Access Api data
+-Layout basic html wireframe
+-Insert data into the DOM and display it on page
 Basic CSS to make data legible on page
 
 
