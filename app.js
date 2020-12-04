@@ -95,7 +95,9 @@ $(() => {
 //===================================================================
 //API
 
-  $(`.button`).on(`click`,() => {
+  $(`.button`).on(`click`,(event) => {
+
+    event.preventDefault()//stops page from refreshing after enter is clicked
 
     let $userInput = $('input[type="text"]').val()
 
@@ -110,7 +112,6 @@ $(() => {
         (data) => {
           console.log(data);
 
-
         const getInfo = () => {
 
           for(let i = 0; i < data.length; i++) {
@@ -119,7 +120,7 @@ $(() => {
             let $city = $(`<li>`).text(`${data[i].city}`).appendTo(`.city`)
             let $street = $(`<li>`).text(`${data[i].street}`).appendTo(`.street`)
             let $state = $(`<li>`).text(`${data[i].state}`).appendTo(`.state`)
-            let $postal = $(`<li>`).text(`${data[i].postal_code}`).appendTo(`.postal`)
+            //let $postal = $(`<li>`).text(`${data[i].postal_code}`).appendTo(`.postal`)
 
           }//end for loop
 
@@ -127,13 +128,14 @@ $(() => {
 
         getInfo()
 
+
         },//end of success function(data)
         (error) => {
           console.log(`error`);
         }//end of error function(error)
+
       )//end of .then()
 
   })//end of on click event for submit button
-
 
 });//end of jQuery

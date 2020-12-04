@@ -1,4 +1,8 @@
 body {
+  /* position: absolute;
+  background-image: url("https://static1.squarespace.com/static/53209a45e4b0c6583227b75d/57bc636ef5e23115c1933c33/5ec6b7a31f97445851a3a6a3/1593475383552/beer-suds.png?format=1500w");
+  background-size: cover;
+  background-repeat: no-repeat; */
   background-color: ghostwhite;
 
 }
@@ -7,7 +11,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 0 auto;
+  margin: 6% auto 0 auto;
 }
 
 .logo img {
@@ -25,14 +29,13 @@ h1 {
 
 .carousel-images img {
   margin: 1em 1em 1em 1em;
-  width: 28em;
-  height: 18em;
+  width: 35em;
+  height: 20em;
   display: none;
-  border: .5em solid gray;
-  border-radius: 20%;
+  border: .5em solid black;
+  border-radius: 2em;
 
 }
-
 
 .carousel-images img:first-of-type {
   display: block;
@@ -42,7 +45,7 @@ input {
   text-align: center;
   width: 18em;
   height: 2em;
-  border-radius: 20%;
+  border-radius: 2em;
 }
 
 button {
@@ -50,7 +53,15 @@ button {
   color: ghostwhite;
   width: 10em;
   height: 2em;
-  border-radius: 20%;
+  border-radius: 2em;
+  border: .25em solid black;
+}
+
+button:hover {
+  background-color: blue;
+  border: .33em solid green;
+
+
 }
 
 ul {
@@ -67,14 +78,18 @@ li {
 
 .nav {
   width: 80%;
-  position: sticky;
+  position: fixed;
+  left: 10%;
+  top: 2%;
   height: 1.5em;
   font-size: 1.5em;
   text-align: center;
   background-color: gray;
   display: flex;
-  justify-content: space-between;
-  border-radius: 20%;
+  justify-content: space-around;
+  border-radius: 2em;
+  border: .2em solid black;
+
 
 
 
@@ -88,9 +103,12 @@ li {
 
 
 .container {
+  margin-top: 1em;
+  background-color: gray;
   display: flex;
   justify-content: space-around;
   line-height: 3em;
   list-style-type: georgian;
+  border-radius: 2em;
 
 }
