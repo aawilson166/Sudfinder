@@ -63,11 +63,11 @@ $(() => {
   //=========================================================
   //Quiz
 
-
-
     let points = 0
 
-  const start = () => {
+  const start = (event) => {
+
+
 
     let choice = prompt(`Welcome to the Beer Quiz! Type start to begin or quit to exit`, `start / quit`)
       if(choice === `start`) {
@@ -87,44 +87,44 @@ $(() => {
       }else{
         points--
       }
-
+      alert(`${points}`)
     let choice2 =  prompt(`Do you normally prefer light or dark beer?`, `light/dark`)
-        if(choice2 === `dark`) {
+      if(choice2 === `dark`) {
         points+=2
       }else if(choice2 === `light`) {
         points++
       }else {
         points--
       }
-
-      let choice3 = prompt(`Are you more about quality or quanity?`, `quality/quantity`)
-        if(choice3 === `quality`) {
+      alert(`${points}`)
+    let choice3 = prompt(`Are you more about quality or quanity?`, `quality/quantity`)
+      if(choice3 === `quality`) {
           points++
-        }else if(choice3 === `quantity`) {
+      }else if(choice3 === `quantity`) {
          points+=2
-       }else {
+      }else {
          points--
-       }
-
-      let choice4 = prompt(`Are you going to be driving tonight?`, `yes/no`)
-       if(choice4 === `yes`) {
+      }
+       alert(`${points}`)
+    let choice4 = prompt(`Are you going to be driving tonight?`, `yes/no`)
+      if(choice4 === `yes`) {
          points++
-       }else if(choice4 === `no`) {
+      }else if(choice4 === `no`) {
          points+=3
-       }else{
+      }else{
          points--
-       }
-
-      let choice5 = prompt(`Is your ideal night a couple drinks and then in bed by 10 or blacking out and possibly waking up in a gutter?`, `bed/gutter`)
-        if(choice5 === `gutter`) {
+      }
+      alert(`${points}`)
+    let choice5 = prompt(`Is your ideal night a couple drinks and then in bed by 10 or blacking out and possibly waking up in a gutter?`, `bed/gutter`)
+      if(choice5 === `gutter`) {
           points+=3
-        }else if(choice5 === `bed`){
+      }else if(choice5 === `bed`){
           points++
-        }else{
+      }else{
           points--
-        }
-
-        if(points === 11){
+      }
+      alert(`${points}`)
+      if(points > 10){
           alert(`You might want to stop at the liquor store on your way to the brewery bud`)
         }else if(points === 10){
           alert(`You might want to stop at the liquor store on your way to the brewery bud`)
@@ -147,10 +147,16 @@ $(() => {
         }else if(points === 1){
           alert(`Whiteclaw?`)
         }else if(points === 0){
-          alert(`You seem like a bud light kinda person`)
+          alert(`You might like natty light`)
         }else if(points < 0){
           alert(`Maybe get a glass of water you might be drunk`)
-        }
+        //   event.preventDefault()
+        //   event.stopPropagation()
+        //   return false
+         }
+
+
+
   }//end of quiz function
 
   $(`.quiz`).on(`click`, start)
@@ -184,6 +190,8 @@ $(() => {
     }
 
     $(`.carousel-images`).children().eq(currentImgIndex).css("display", "block")
+
+
   })//end of previous onclick
 
 
@@ -191,6 +199,17 @@ $(() => {
 
 //===================================================================
 //API
+
+  $(`.adv`).on(`click`, (event) => {
+    $(`.adv-cont`).toggle(`css`).css(`display`, `flex`)
+
+
+
+  })
+
+
+
+//============================================================
 
   $(`.button`).on(`click`,(event) => {
 

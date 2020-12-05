@@ -54,6 +54,18 @@ input {
   border-radius: 2em;
 }
 
+.adv-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  display: none;
+}
+
+.advanced {
+
+
+}
+
 button {
   background-color: #6e696c;
   color: ghostwhite;
