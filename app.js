@@ -71,7 +71,7 @@ $(() => {
 
 
 
-    let choice = prompt(`Welcome to the Beer Quiz! Type start to begin or quit to exit`, `start / quit`)
+    let choice = prompt(`Welcome to the Beer Quiz! Type start to begin or click any button to exit`, `start / quit`)
       if(choice === `start`) {
         alert(`Good Choice, let's get started!`)
         quiz()
@@ -204,6 +204,8 @@ $(() => {
 
   $(`.adv`).on(`click`, (event) => {
     $(`.adv-cont`).toggle(`css`).css(`display`, `flex`)
+    $(`.finder`).hide()
+
 
   })//end .adv onclick
 
@@ -221,7 +223,7 @@ $(() => {
 
         console.log($cityInput);
 
-        let link = `https://api.openbrewerydb.org/breweries?by_state=${$stateInput}&by_city=${$cityInput}&by_postal=${$postalInput}&by_name=${$nameInput}`
+        let link = `https://api.openbrewerydb.org/breweries?per_page=50&by_state=${$stateInput}&by_city=${$cityInput}&by_postal=${$postalInput}&by_name=${$nameInput}`
 
         console.log(link);
 

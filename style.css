@@ -6,6 +6,7 @@ body {
   background-color: ghostwhite;
   font-family: 'Noto Sans KR', sans-serif;
 
+
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 6% auto 0 auto;
+  font-family: 'Lobster', cursive;
 }
 
 .logo img {
@@ -67,6 +69,7 @@ input {
 }
 
 button {
+  font-family: 'Balsamiq Sans', cursive;
   background-color: #6e696c;
   color: ghostwhite;
   width: 10em;
@@ -120,6 +123,7 @@ li {
 
 
 .container {
+  font-family: 'Balsamiq Sans', cursive;
   margin-top: 1em;
   background-color: #6e696c;
   color: ghostwhite;
