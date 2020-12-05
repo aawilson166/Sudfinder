@@ -15,7 +15,7 @@ Thurs 12/3:
 
 
 Fri 12/4:
-Create user friendly way to filter through data
+-Create user friendly way to filter through data
 -Create NAV bar
 -Create Carousel
 /Mobile friendly CSS styling
@@ -24,6 +24,12 @@ Create user friendly way to filter through data
 
 Sat 12/5:
 -Create quiz that recommends type of brewery/beer
+footer
+add media querys for mobile friendly design
+top pics/recommendations
+map
+
+
 
 
 Sun 12/6:

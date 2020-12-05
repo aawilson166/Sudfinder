@@ -50,7 +50,19 @@ for(let i = 0; i < data.length; i++) {
 // }//end of city function
   // $(`button`).on(`click`, city)
 
-      //url: `https://api.openbrewerydb.org/breweries?by_city=murrieta`
+//url: `https://api.openbrewerydb.org/breweries?by_city=murrieta`
+
+//trying to write a code block that allows you to toggle back and fourth from basic to advanced search without refreshing
+
+  $(`.adv`).on(`click`, (event) => {
+
+    $(`.adv-cont`).toggle(`css`).css(`display`, `flex`)
+    $(`.basic-search`).toggle(`css`).css(`display`, `none`)
+    $(`.adv`).text(`Basic Search`)
+    //$(`.finder`).hide()
+
+
+  })//end .adv onclick
 
 ==============================================================
 MEAT N' POTATOES
@@ -202,9 +214,15 @@ $(() => {
 //===================================================================
 //Advanced button toggle
 
+//trying to write a code block that allows you to toggle back and fourth from basic to advanced search without refreshing
+
   $(`.adv`).on(`click`, (event) => {
+
     $(`.adv-cont`).toggle(`css`).css(`display`, `flex`)
-    $(`.finder`).hide()
+    //$(`.adv`).text(`Basic Search`)
+    $(`#basic`).toggle(`css`)
+    $(`.button`).toggle(`css`)
+
 
 
   })//end .adv onclick

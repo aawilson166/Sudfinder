@@ -49,6 +49,18 @@ h1 {
   display: block;
 }
 
+/* .next {
+  width: 5em;
+  height: 20em;
+  opacity: 50%;
+}
+
+.previous {
+  width: 5em;
+  height: 20em;
+  opacity: 50%;
+} */
+
 input {
   text-align: center;
   width: 18em;
@@ -70,7 +82,7 @@ input {
 
 button {
   font-family: 'Balsamiq Sans', cursive;
-  background-color: #6e696c;
+  background-color: #3a3739;
   color: ghostwhite;
   width: 10em;
   height: 2.5em;
@@ -79,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-color: #3a3739;
+  background-color: #6e696c;
   border: .33em solid #2e741d;
 
 
@@ -103,7 +115,7 @@ li {
   left: 10%;
   top: 2%;
   height: 2.5em;
-  background-color: #6e696c;
+  background-color: #3a3739;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,12 +137,27 @@ li {
 .container {
   font-family: 'Balsamiq Sans', cursive;
   margin-top: 1em;
-  background-color: #6e696c;
+  background-color: #3a3739;
   color: ghostwhite;
   display: flex;
   justify-content: space-around;
   line-height: 3em;
   list-style-type: georgian;
   border-radius: 2em;
+
+}
+
+.footer {
+  width: 80%;
+  position: fixed;
+  left: 10%;
+  bottom: 2%;
+  height: 2.5em;
+  background-color: #3a3739;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2em;
+  border: .2em solid black;
 
 }
