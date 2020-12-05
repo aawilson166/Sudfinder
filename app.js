@@ -28,6 +28,8 @@ MAKE A BEER CAROUSEL
 
 need to make it so you can only click submit once?
 
+advanced search can i string on all this info into my url? or do I need to make a function that can tell what value the user typed in
+
 ==============================================================
 GRAVEYARD
 ==============================================================
@@ -87,7 +89,7 @@ $(() => {
       }else{
         points--
       }
-      alert(`${points}`)
+      //alert(`${points}`)
     let choice2 =  prompt(`Do you normally prefer light or dark beer?`, `light/dark`)
       if(choice2 === `dark`) {
         points+=2
@@ -96,7 +98,7 @@ $(() => {
       }else {
         points--
       }
-      alert(`${points}`)
+      //alert(`${points}`)
     let choice3 = prompt(`Are you more about quality or quanity?`, `quality/quantity`)
       if(choice3 === `quality`) {
           points++
@@ -105,7 +107,7 @@ $(() => {
       }else {
          points--
       }
-       alert(`${points}`)
+       //alert(`${points}`)
     let choice4 = prompt(`Are you going to be driving tonight?`, `yes/no`)
       if(choice4 === `yes`) {
          points++
@@ -114,7 +116,7 @@ $(() => {
       }else{
          points--
       }
-      alert(`${points}`)
+      //alert(`${points}`)
     let choice5 = prompt(`Is your ideal night a couple drinks and then in bed by 10 or blacking out and possibly waking up in a gutter?`, `bed/gutter`)
       if(choice5 === `gutter`) {
           points+=3
@@ -123,7 +125,7 @@ $(() => {
       }else{
           points--
       }
-      alert(`${points}`)
+      //alert(`${points}`)
       if(points > 10){
           alert(`You might want to stop at the liquor store on your way to the brewery bud`)
         }else if(points === 10){
@@ -134,9 +136,9 @@ $(() => {
           alert(`Double IPA`)
         }else if(points === 7){
          alert(`IPA`)
-       }else if(points === 6){
+        }else if(points === 6){
          alert(`IPA`)
-       }else if(points === 5){
+        }else if(points === 5){
           alert(`Try a blonde ale`)
         }else if(points === 4){
           alert(`Try a blonde ale`)
@@ -198,18 +200,71 @@ $(() => {
 
 
 //===================================================================
-//API
+//Advanced button toggle
 
   $(`.adv`).on(`click`, (event) => {
     $(`.adv-cont`).toggle(`css`).css(`display`, `flex`)
 
+  })//end .adv onclick
+
+//=================================================================
+//advanced API
+  $(`.adv-btn`).on(`click`, (event) => {
+    event.preventDefault()
 
 
-  })
+
+        let $stateInput = $('#state').text('input[type="text"]').val()
+        let $cityInput = $('#city').text('input[type="text"]').val()
+        let $postalInput = $('#postal').text('input[type="text"]').val()
+        let $nameInput = $('#name').text('input[type="text"]').val()
+
+        console.log($cityInput);
+
+        let link = `https://api.openbrewerydb.org/breweries?by_state=${$stateInput}&by_city=${$cityInput}&by_postal=${$postalInput}&by_name=${$nameInput}`
+
+        console.log(link);
+
+        $.ajax({
+
+          url: link
+
+        })//end of ajax
+          .then(
+            (data) => {
+              console.log(data);
+
+            const getInfo = () => {
+
+              for(let i = 0; i < data.length; i++) {
+
+                let $name = $(`<li>`).text(`${data[i].name}`).appendTo(`.name`)
+                let $city = $(`<li>`).text(`${data[i].city}`).appendTo(`.city`)
+                let $street = $(`<li>`).text(`${data[i].street}`).appendTo(`.street`)
+                let $state = $(`<li>`).text(`${data[i].state}`).appendTo(`.state`)
+                //let $postal = $(`<li>`).text(`${data[i].postal_code}`).appendTo(`.postal`)
+
+              }//end for loop
+
+            }//end getName
+
+            getInfo()
+
+
+            },//end of success function(data)
+            (error) => {
+              console.log(`error`);
+            }//end of error function(error)
+
+          )//end of .then()
+
+})//end .adv-btn onclick
+
 
 
 
 //============================================================
+//regular API
 
   $(`.button`).on(`click`,(event) => {
 
