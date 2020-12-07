@@ -91,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-color: #6e696c;
+  background-color: #b4b0b3;
   border: .33em solid #2e741d;
 
 
@@ -122,17 +122,14 @@ li {
   border-radius: 2em;
   border: .2em solid black;
 
-
-
-
 }
+
+
 
 .finder {
   text-align: center;
 
 }
-
-
 
 .container {
   font-family: 'Balsamiq Sans', cursive;
@@ -144,6 +141,17 @@ li {
   line-height: 3em;
   list-style-type: georgian;
   border-radius: 2em;
+  font-size: .9em;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    font-size: .2em;
+
+  }
+  h1 {
+    padding-top: 1em;
+  }
 
 }
 

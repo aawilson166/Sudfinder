@@ -24,21 +24,23 @@ Fri 12/4:
 
 Sat 12/5:
 -Create quiz that recommends type of brewery/beer
-footer
-add media querys for mobile friendly design
-top pics/recommendations
-map
+-footer
+-add media querys for mobile friendly design
+
 
 
 
 
 Sun 12/6:
-CSS styling
-Use app to find brewery to watch the games at
+-CSS styling
+
 
 
 Mon 12/7:
+top pics/recommendations
+map
 CSS styling
+
 
 
 Tues 12/8:
@@ -56,14 +58,14 @@ FIGURE IT OUT:
 
 how to make each list item have a solid line underneath making each line more legible
 
-how to search by either city, state, zip, ect...
+-how to search by either city, state, zip, ect...
 
 how to make a search radius *lat,long and math or is there an easier way?*
 
-stationary nav bar that wont move when scrolling
+-stationary nav bar that wont move when scrolling
 
-do I want to be able to stack results or just search one peram at a time?
+-do I want to be able to stack results or just search one peram at a time?
 
 possible to display results on an interactive map? ya but how?
 
-can I push pictures of each brewery into the carousel?
+/can I push pictures of each brewery into the carousel?
