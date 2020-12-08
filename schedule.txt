@@ -37,9 +37,9 @@ Sun 12/6:
 
 
 Mon 12/7:
-top pics/recommendations
-map
-CSS styling
+/top pics/recommendations
+/map
+/CSS styling
 
 
 
@@ -69,3 +69,7 @@ how to make a search radius *lat,long and math or is there an easier way?*
 possible to display results on an interactive map? ya but how?
 
 /can I push pictures of each brewery into the carousel?
+
+my brewery lists text appears large on chrome dev tools but normal on my actual iphone. probably the way EM is set up on different devices
+
+can not get a drop down style list on top Picks

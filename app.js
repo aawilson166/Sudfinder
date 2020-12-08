@@ -139,9 +139,9 @@ $(() => {
       }
       //alert(`${points}`)
       if(points > 10){
-          alert(`You might want to stop at the liquor store on your way to the brewery bud`)
+          alert(`You might want to stop at the liquor store on your way to the brewery`)
         }else if(points === 10){
-          alert(`You might want to stop at the liquor store on your way to the brewery bud`)
+          alert(`You might want to stop at the liquor store on your way to the brewery`)
         }else if(points === 9){
           alert(`Double IPA`)
         }else if(points === 8){
