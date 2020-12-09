@@ -21,6 +21,7 @@ h1 {
   padding: .5em;
   width: 2em;
   height: 2em;
+  border-radius: 1em;
 }
 
 .carousel-container {
@@ -169,7 +170,7 @@ z-index: 1;
   } */
 
   h1 {
-    padding-top: 1em;
+    padding-top: .1em;
   }
 
 }
